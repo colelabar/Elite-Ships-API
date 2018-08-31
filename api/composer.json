@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "my\\namespace\\" : "src"
+            "simchick\\namespace\\" : "src"
         }
     }
 }
