@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<script src="../public/script.js"></script>
+
+<h1><?php echo $title; ?></h1>
+
+<form id='shipForm'>
+  <div class="form-group">
+    <label for="manufacturer">Manufacturer</label>
+    <input name="manufacturer" type="text" class="form-control" id="manufacturer" placeholder="Ex. Lakon Spaceways">
+  </div>
+  <div class="form-group">
+    <label for="name">Ship Model</label>
+    <input name="name" type="text" class="form-control" id="name" placeholder="Ex. Type-7 Transporter">
+  </div>
+  <div class="form-group">
+    <label for="size">Ship Size</label>
+    <input name="size" type="text" class="form-control" id="size" placeholder="Ex. Medium">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
