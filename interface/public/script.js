@@ -29,7 +29,7 @@ $(document).ready(function() {
     if(window.confirm("Are you sure you want to delete this entry?")) {
       $.ajax({
         type: "DELETE",
-        url: "http://localhost:8080/interface/ships/" + delButton,
+        url: "http://localhost:8080/api/ships/" + delButton,
         success: function(data) {
           window.location.reload();
         }

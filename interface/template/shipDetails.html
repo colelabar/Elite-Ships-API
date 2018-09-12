@@ -1,0 +1,28 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../public/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body class="pageBody">
+
+  <h1 class="headline-form"> <?php echo $title; ?> </h1>
+
+    <div class="detail-group">
+      <span><h2>Manufacturer</h2>
+      <p> <?php echo $ship['manufacturer']; ?> </p></span>
+    </div>
+    <div class="detail-group">
+      <span><h2>Ship Name</h2>
+      <p> <?php echo $ship['name']; ?> </p></span>
+    </div>
+    <div class="detail-group">
+      <span><h2>Size</h2>
+      <p> <?php echo $ship['size']; ?> </p></span>
+    </div>
+
+    <a href="http://localhost:8080/interface" class='btn btn-primary'>Home</a>
+
+</body>

@@ -10,6 +10,7 @@ class App {
   private $app;
   public function __construct($db) {
 
+    // db config settings
     $config['db']['host'] = 'localhost';
     $config['db']['user'] = 'root';
     $config['db']['pass'] = 'root';
@@ -84,8 +85,8 @@ class App {
           $errorData = array('status' => 400, 'message' => 'Invalid data provided to create ship record');
           return $response->withJson($errorData, 400);
         }
-        // return the updated record
-        $ship = $this->db->query('SELECT * from ships ORDER BY id DESC LIMIT 1')->fetch();
+        // return the new record
+        $ship = $this->db->query('SELECT * FROM ships ORDER BY id DESC LIMIT 1')->fetch();
         $jsonResponse = $response->withJson($ship);
 
         return $jsonResponse;
@@ -113,7 +114,7 @@ class App {
           $updateString = $updateString . "$field = '$value'";
           if ($field != $last_key) {
 
-            // add the comma to avoid sql syntax problems
+            // comma to avoid sql syntax issues
             $updateString = $updateString . ", ";
           }
         }

@@ -51,7 +51,7 @@ class App
          $tableRows = $tableRows . "<tr>";
          $tableRows = $tableRows . "<td>" . $ship["manufacturer"] . "</td><td>" . $ship["name"] . "</td><td>" . $ship["size"] . "</td>";
          $tableRows = $tableRows . "<td>
-         <a href='http://localhost:8080/interface/ships/" . $ship["id"] . "' class='btn btn-primary'>View Details</a>
+         <a href='http://localhost:8080/interface/ships/" . $ship["id"] . "' class='btn btn-primary'>Details</a>
          <a href='http://localhost:8080/interface/ships/" . $ship["id"] . "/edit' class='btn btn-secondary'>Edit</a>
          <a data-id='" . $ship["id"] . "' class='btn btn-danger deletebtn'>Delete</a>
 
@@ -76,13 +76,15 @@ class App
      });
 
      $app->get('/ships/{id}', function (Request $request, Response $response, array $args) {
-         $id = $args['id'];
-         $responseRecords = makeApiRequest('ships/' . $id);
-         $body = "<h1>Manufacturer: " . $responseRecords['manufacturer'] . "</h1>";
-         $body = $body . "<h2>Ship Model: " . $responseRecords['name'] . "</h2>";
-         $body = $body . "<h3>Ship Size: " . $responseRecords['size'] . "</h3>";
-         $response->getBody()->write($body);
-         return $response;
+       $id = $args['id'];
+       $responseRecord = makeApiRequest('ships/' . $id);
+       $templateVariables = [
+         "type" => "show",
+         "title" => "Ship Details",
+         "ship" => $responseRecord
+       ];
+       return $this->renderer->render($response, "/shipDetails.html", $templateVariables);
+
      });
 
      $app->get('/ships/{id}/edit', function (Request $request, Response $response, array $args) {
