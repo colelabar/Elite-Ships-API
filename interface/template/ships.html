@@ -1,0 +1,21 @@
+<head>
+<link rel="stylesheet" type="text/css" href="public/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<script src="public/script.js"></script>
+
+
+<body class="pageBody">
+
+  <h1 class="headline"><?php echo $title; ?></h1>
+  <h1 class="headline-button"><a class="btn btn-info" href="http://localhost:8080/interface/ships/add">Add Ship</a></h1>
+
+  <table class='table'>
+    <tr><th>Manufacturer</th><th>Name</th><th>Size</th></tr>
+  <?php echo $tableRows; ?>
+  </table>
+
+</body>
