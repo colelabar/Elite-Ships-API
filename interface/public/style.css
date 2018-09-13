@@ -1,0 +1,119 @@
+.pageBody {
+  height: 96%;
+  width: 96%;
+  padding: 2%;
+  background-color: #ABB2B6;
+  margin: 0;
+}
+
+.headline {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif;
+}
+
+.headline-form {
+  text-align: left;
+  font-size: 35px;
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif;
+}
+
+.headline-button {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-info {
+  background-color: #2CAE63;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn-info:hover {
+  color: black;
+}
+
+.btn-primary {
+  background-color: #2C77AE;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+}
+.btn-primary:hover {
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #DE7907;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+}
+.btn-secondary:hover {
+  color: black;
+}
+
+.btn-danger {
+  background-color: #F12D0F;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+}
+.btn-danger:hover {
+  color: black;
+}
+
+.table th {
+  padding: 2%;
+  font-size: 20px;
+}
+
+.table td {
+  padding: 1%;
+  font-size: 15px;
+}
+
+#shipForm {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  font-family: monospace;
+}
+#shipForm input {
+  width: 200px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+#shipEditForm {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  font-family: monospace;
+}
+#shipEditForm input {
+  width: 200px;
+  height: 25px;
+  margin-bottom: 10px;
+}
