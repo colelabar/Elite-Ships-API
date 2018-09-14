@@ -25,6 +25,20 @@
   font-family: Arial, sans-serif;
 }
 
+.hero {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 50%;
+  border: 2px black solid;
+}
+
+.hero-subtitle {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
 .table {
   width: 100%;
   text-align: center;

@@ -29,7 +29,6 @@ class ShipTest extends TestCase
     }
 
     // test the GET ships endpoint
-    // this test continues to fail, despite my attempts to make it pass. There is a problem with the response body, and it's returning null instead of the expected string value. The status codes aren't throwing an error, which leads me to believe that it has something to do with the string comparison..
     public function testGetShips() {
 
       // expected result string

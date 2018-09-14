@@ -14,15 +14,15 @@
   <form data-id="<?php echo $ship['id']; ?>" id='shipEditForm'>
     <div class="form-group">
       <label for="manufacturer">Manufacturer</label>
-      <input name="manufacturer" type="text" class="form-control" id="manufacturer" placeholder= "<?php echo $ship['manufacturer']; ?>">
+      <input name="manufacturer" type="text" class="form-control" id="manufacturer" value= "<?php echo $ship['manufacturer']; ?>">
     </div>
     <div class="form-group">
       <label for="name">Ship Model</label>
-      <input name="name" type="text" class="form-control" id="name" placeholder="<?php echo $ship['name']; ?>">
+      <input name="name" type="text" class="form-control" id="name" value="<?php echo $ship['name']; ?>">
     </div>
     <div class="form-group">
       <label for="size">Ship Size</label>
-      <input name="size" type="text" class="form-control" id="size" placeholder="<?php echo $ship['size']; ?>">
+      <input name="size" type="text" class="form-control" id="size" value="<?php echo $ship['size']; ?>">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

@@ -33,7 +33,7 @@ class App {
     //  get ALL ships
     $app->get('/ships', function (Request $request, Response $response) {
         $this->logger->addInfo("GET /ships");
-        $ships = $this->db->query('SELECT * FROM ships')->fetchAll();
+        $ships = $this->db->query('SELECT * FROM ships ORDER BY size DESC')->fetchAll();
         $jsonResponse = $response->withJson($ships);
         return $jsonResponse;
     });
