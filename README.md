@@ -1,6 +1,8 @@
 # CRUD API Lab
 Given as a lab assignment in my 3rd Semester of Thaddeus Stevens, this was to be built to display proficiency in designing and constructing an API and a client-facing interface for interaction. It was primarily built using PHP, configured on a Vagrant Virtualbox.
 
+Below you will find the requirements for the assignment.
+
 # Lab/Assignment
 Create your own Slim API.
 
